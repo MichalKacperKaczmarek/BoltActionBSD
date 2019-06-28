@@ -1301,6 +1301,61 @@
         <cost name="points" typeId="5101-e033-4c05-c668" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b7d6-1e1f-03a6-0475" name="Anti-tank Rifle Team" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="5ed8-ba71-ea46-4ba7" name="Team (2 men)" hidden="false" targetId="09d1-687c-8e7a-65b5" type="rule"/>
+        <infoLink id="0113-e13b-2ff3-90a6" name="Anti-tank Rifle" hidden="false" targetId="d213-dcb4-a3e4-da36" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c6fc-46d3-99e8-e0d9" name="Experience" hidden="false" collective="false" defaultSelectionEntryId="e375-919b-ddba-0821">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a1f-d087-c241-e783" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eada-6a07-ae29-9999" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5617-6a49-10ec-6b26" name="Inexperienced" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="2a63-2497-8e06-cba4" name="Inexperienced Infantry" hidden="false" targetId="517f-8022-6f23-e358" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="points" typeId="5101-e033-4c05-c668" value="21.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e375-919b-ddba-0821" name="Regular" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="d707-6ee9-cc60-d935" name="Regular Infantry" hidden="false" typeId="902e-abb2-eaff-5eed" typeName="Infantry">
+                  <characteristics>
+                    <characteristic name="Morale" typeId="e8df-4407-021d-0d8c">9</characteristic>
+                    <characteristic name="Experience" typeId="9dcf-d515-fb79-6ea5">Regular</characteristic>
+                    <characteristic name="Special Rules" typeId="f244-3c13-048f-e43d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="points" typeId="5101-e033-4c05-c668" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7c15-2ac6-8bf5-324a" name="Veteran" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3045-a2d1-e641-b79c" name="Veteran Infantry" hidden="false" typeId="902e-abb2-eaff-5eed" typeName="Infantry">
+                  <characteristics>
+                    <characteristic name="Morale" typeId="e8df-4407-021d-0d8c">10</characteristic>
+                    <characteristic name="Experience" typeId="9dcf-d515-fb79-6ea5">Veteran</characteristic>
+                    <characteristic name="Special Rules" typeId="f244-3c13-048f-e43d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="points" typeId="5101-e033-4c05-c668" value="39.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="5101-e033-4c05-c668" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="ff55-b706-8441-78d1" name="Assault" publicationId="d27b-ece7-c9d0-19dd" hidden="false">
@@ -1349,7 +1404,7 @@ on a roll of 5 or 6 the unit is immediately uprated to Regular for the rest of t
       <description>A team weapon shoots at full effectiveness so long as there are at least two men to serve it. A minimum of two crew is always needed to fire at full effect. If only one man remains to serve a team weapon then the weapon can still be fired but suffers a –1 ‘to hit’ penalty and suffers -1 &apos;to morale&apos;</description>
     </rule>
     <rule id="eb7e-92ef-4b2a-3c0c" name="Flamethrower" hidden="false">
-      <description>Flamethrowers never suffer to-hit penalties for cover or Down. Always hits top armour. No -1 PEN for long range. Gun shield and extra protection rules do not apply. Units hit take D3+1 pins and must always check morale (if fail, then destroyed). Flamethrower rolls D6 - on 1 it runs out of fuel and is removed from the table.</description>
+      <description>Flamethrowers never suffer to-hit penalties for cover or Down. Always hits top armour. No -1 PEN for long range. Gun shield and extra protection rules do not apply. Units hit take D3+1 pins and must always check morale (if fail, then destroyed). Flamethrower rolls D6 - on 1 it runs out of fuel and is removed from the table (unless it is vehicle. If so flamethrower is unoperable but vehicle can act as normal)</description>
     </rule>
     <rule id="5687-4427-01d7-fa6e" name="Sniper" hidden="false">
       <description>When a sniper shoots using a Fire or Ambush order, the player can decide to use his scope. Rifle range changes to 36&quot;. If target is within 12&quot; the shot misses automatically. Shot ignores negative to-hit modifiers except pinning markers and for missing assistant. Shot ignores gun shield and extra protection rules. If successful, always counts as exceptional damage and can pick any model in the unit. When not using scope, all members of team can fire any weapon they have and in assault can use the assault rule if pistol/submachine gun.</description>
@@ -1419,6 +1474,12 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
     </rule>
     <rule id="86c9-eb25-1df7-c614" name="Cannot fire long range" hidden="false">
       <description>This gun cannon fire at long range. It is applied to both direct and indirect fire</description>
+    </rule>
+    <rule id="7d2b-706e-3c1a-1aee" name="Vulnerable" hidden="false">
+      <description>All shots to side and rear get an additional +1 penetration</description>
+    </rule>
+    <rule id="993d-2ea4-379d-142c" name="Unreliable" hidden="false">
+      <description>If the unit suffers one or more pin marker as a result of an enemy attack, it suffers one further pin marker in addition.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1788,7 +1849,7 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
         <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">36</characteristic>
         <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">5</characteristic>
         <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8"/>
-        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"/>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d">Front arc</characteristic>
       </characteristics>
     </profile>
     <profile id="b578-6a59-0e86-2861" name="Twin Forward Facing MMG" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
@@ -1806,7 +1867,7 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
         <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">36</characteristic>
         <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">4</characteristic>
         <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8"/>
-        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"/>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d">Front arc</characteristic>
       </characteristics>
     </profile>
     <profile id="331f-25df-8ead-142e" name="Pintle-mounted LMG" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
@@ -1923,7 +1984,7 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
         <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">48</characteristic>
         <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">4</characteristic>
         <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8">+2</characteristic>
-        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"/>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d">HE (1&apos;&apos;)</characteristic>
       </characteristics>
     </profile>
     <profile id="c5ee-b308-06bf-000d" name="Turret-mounted Light Howitzer" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
@@ -2032,6 +2093,60 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
         <characteristic name="Tow" typeId="b44a-7669-2198-e52f"/>
         <characteristic name="Morale" typeId="ad98-f0f7-aa0a-03f7">10</characteristic>
         <characteristic name="Special Rules" typeId="bad6-2fe9-1a39-b829">Open-topped</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4534-9fa3-43c4-b732" name="BAR Automatic Rifle" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="c371-053a-c3e3-7329">Automatic Rifle</characteristic>
+        <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">30</characteristic>
+        <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">2</characteristic>
+        <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8"/>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"/>
+      </characteristics>
+    </profile>
+    <profile id="09c2-d225-586f-8480" name="Turret-mounted MMG" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="c371-053a-c3e3-7329">MMG</characteristic>
+        <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">36</characteristic>
+        <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">5</characteristic>
+        <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8"/>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8bd-ef7f-c201-727b" name="Regular Armoured Wheeled Vehicle" hidden="false" typeId="d3f7-e6dd-790e-73e5" typeName="Vehicle">
+      <characteristics>
+        <characteristic name="Type" typeId="6321-fd68-91e5-c03b">Wheeled</characteristic>
+        <characteristic name="Damage Value" typeId="9c8d-b14b-87e2-503f">7+</characteristic>
+        <characteristic name="Transport" typeId="5fdf-0457-ae33-2fd2"/>
+        <characteristic name="Tow" typeId="b44a-7669-2198-e52f"/>
+        <characteristic name="Morale" typeId="ad98-f0f7-aa0a-03f7">9</characteristic>
+        <characteristic name="Special Rules" typeId="bad6-2fe9-1a39-b829"/>
+      </characteristics>
+    </profile>
+    <profile id="00fc-5bba-0ddf-e531" name="Inexperienced Armoured Half-track" hidden="false" typeId="d3f7-e6dd-790e-73e5" typeName="Vehicle">
+      <characteristics>
+        <characteristic name="Type" typeId="6321-fd68-91e5-c03b">Half-track</characteristic>
+        <characteristic name="Damage Value" typeId="9c8d-b14b-87e2-503f">7+</characteristic>
+        <characteristic name="Transport" typeId="5fdf-0457-ae33-2fd2"/>
+        <characteristic name="Tow" typeId="b44a-7669-2198-e52f"/>
+        <characteristic name="Morale" typeId="ad98-f0f7-aa0a-03f7">8</characteristic>
+        <characteristic name="Special Rules" typeId="bad6-2fe9-1a39-b829"/>
+      </characteristics>
+    </profile>
+    <profile id="f3eb-2f7d-a9b2-f0da" name="Forward-facing Heavy AT Gun" hidden="false" typeId="9d34-5acf-ae99-8ff1" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="c371-053a-c3e3-7329">Heavy AT Gun</characteristic>
+        <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">72</characteristic>
+        <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">1</characteristic>
+        <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8">+6</characteristic>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d">HE (2&apos;&apos;), Front arc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ba0-7fce-296f-cc1a" name="Inexperienced Green Infantry" hidden="false" typeId="902e-abb2-eaff-5eed" typeName="Infantry">
+      <characteristics>
+        <characteristic name="Morale" typeId="e8df-4407-021d-0d8c">8</characteristic>
+        <characteristic name="Experience" typeId="9dcf-d515-fb79-6ea5">Inexperienced</characteristic>
+        <characteristic name="Special Rules" typeId="f244-3c13-048f-e43d">Green</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

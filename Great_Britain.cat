@@ -260,7 +260,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="2b73-9663-fa4b-967a" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4aa-c9af-0e4d-7b2e" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4aa-c9af-0e4d-7b2e" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="209f-4af1-ff8f-47f6" type="max"/>
           </constraints>
           <selectionEntries>
@@ -371,7 +371,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="817a-65e5-ceac-1cac" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc6-93c0-b3f1-e33f" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc6-93c0-b3f1-e33f" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ef-1ab2-3bd7-a3b7" type="max"/>
           </constraints>
           <selectionEntries>
@@ -473,7 +473,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="7d83-ef38-07d9-0e5c" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25de-9d77-bf70-90de" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25de-9d77-bf70-90de" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d2-866d-ffcb-2f1c" type="max"/>
           </constraints>
           <selectionEntries>
@@ -563,7 +563,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="04d3-cadc-14b7-acaf" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f233-1fc0-e7b7-40eb" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f233-1fc0-e7b7-40eb" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d49d-50da-78fb-1087" type="max"/>
           </constraints>
           <selectionEntries>
@@ -1055,19 +1055,6 @@
         <infoLink id="ba59-c12e-aad4-44a0" name="Fixed" hidden="false" targetId="03cb-ce4c-a181-908a" type="rule"/>
         <infoLink id="e5e3-d14e-39fb-2224" name="Gun Shield" hidden="false" targetId="0272-1d0e-2c13-ef23" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="e068-1aa7-7645-a481" name="Spotter" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a0-5e41-0eb8-d663" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b80c-4266-fba5-1905" name="Spotter" hidden="false" targetId="e356-10b5-ddee-918f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="5101-e033-4c05-c668" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="907a-ff9f-da7c-e561" name="Experience" hidden="false" collective="false" defaultSelectionEntryId="cc42-ad98-8696-7cb6">
           <constraints>
@@ -1843,7 +1830,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="0aac-e858-ca01-b871" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5d-de58-4fa6-0629" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5d-de58-4fa6-0629" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b64-d3bc-2460-850d" type="max"/>
           </constraints>
           <selectionEntries>
@@ -1904,7 +1891,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="2f26-8072-bd2c-491d" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7387-722b-ddf2-43ce" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7387-722b-ddf2-43ce" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ab-d007-e286-1044" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2000,7 +1987,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="47bc-31a5-378b-246c" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3472-8ded-9fed-4556" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3472-8ded-9fed-4556" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c876-6da8-fad1-ae4d" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2075,7 +2062,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="f3dd-3aaa-3d19-f567" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ceb-cf2d-e321-1655" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ceb-cf2d-e321-1655" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="561d-a259-3f1c-ae90" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2145,7 +2132,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="3276-8d2e-7ad6-f78a" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3722-c299-7a1f-64b8" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3722-c299-7a1f-64b8" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d75d-df48-a3e5-a19d" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2235,7 +2222,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="8c67-e129-a7b7-6718" name="Squad members" hidden="false" collective="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="341d-1c83-1ff7-0200" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="341d-1c83-1ff7-0200" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c23-3fb4-625f-bedd" type="max"/>
           </constraints>
           <selectionEntries>
@@ -2302,6 +2289,7 @@
                       <infoLinks>
                         <infoLink id="5a86-1741-1120-65fb" name="SMG" hidden="false" targetId="ded9-1984-861c-d9eb" type="profile"/>
                         <infoLink id="c570-52aa-8279-c442" name="Assault" hidden="false" targetId="ff55-b706-8441-78d1" type="rule"/>
+                        <infoLink id="4bfc-4e78-9428-6d2d" name="Tough Fighters" hidden="false" targetId="7a45-bf88-d40c-9a97" type="rule"/>
                       </infoLinks>
                     </entryLink>
                   </entryLinks>
@@ -2367,7 +2355,7 @@
                 <infoLink id="a574-be0c-2013-d3db" name="Commando" hidden="false" targetId="f80f-1085-196b-9da9" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="a301-5740-8533-8d37" name="Rifle" hidden="false" collective="false">
+                <selectionEntryGroup id="a301-5740-8533-8d37" name="Rifle" hidden="false" collective="false" defaultSelectionEntryId="901f-d5ad-3523-5cd6">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f5b-4ab0-b2be-bd4a" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40a-a3ce-b769-3963" type="min"/>
@@ -2606,7 +2594,7 @@
                 <infoLink id="f7fb-91b6-9adc-ea41" name="Regular Armoured Tracked Vehicle" hidden="false" targetId="9e16-3af3-e9e9-f21e" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="points" typeId="5101-e033-4c05-c668" value="100.0"/>
+                <cost name="points" typeId="5101-e033-4c05-c668" value="105.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2660,6 +2648,7 @@
         <infoLink id="3d4b-2c4e-2db3-1735" name="Co-axial MMG" hidden="false" targetId="65eb-78af-989c-6994" type="profile"/>
         <infoLink id="ce2d-5537-a76b-afa4" name="HE (3&apos;&apos;)" hidden="false" targetId="54e9-d8e4-82bc-eed5" type="rule"/>
         <infoLink id="c64e-b674-5e76-f46b" name="Co-axial" hidden="false" targetId="2b27-0af5-6dc9-e6ce" type="rule"/>
+        <infoLink id="5d13-a3d1-a3a7-fff8" name="Forward Facing MMG" hidden="false" targetId="eb76-07d6-d334-04cf" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9c2d-84a6-7128-4d4b" name="Experience" hidden="false" collective="false" defaultSelectionEntryId="5cf8-38f4-e201-df3b">
