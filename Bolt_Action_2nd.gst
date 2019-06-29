@@ -948,7 +948,7 @@
                 <infoLink id="2e22-e3e9-8210-0799" name="Veteran Officer" hidden="false" targetId="283d-fb1f-a0a9-7940" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="points" typeId="5101-e033-4c05-c668" value="65.0"/>
+                <cost name="points" typeId="5101-e033-4c05-c668" value="90.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2110,7 +2110,7 @@ If assaulted by infantry open-topped armoured vehicles are destroyed automatical
         <characteristic name="Range (&apos;&apos;)" typeId="7779-3b0c-87a0-8aa2">36</characteristic>
         <characteristic name="Shots" typeId="401e-0e1f-1e6a-1426">5</characteristic>
         <characteristic name="Pen" typeId="bd45-fc5d-356b-acd8"/>
-        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"></characteristic>
+        <characteristic name="Special Rules" typeId="adb2-2b5a-b81b-ea1d"/>
       </characteristics>
     </profile>
     <profile id="d8bd-ef7f-c201-727b" name="Regular Armoured Wheeled Vehicle" hidden="false" typeId="d3f7-e6dd-790e-73e5" typeName="Vehicle">
