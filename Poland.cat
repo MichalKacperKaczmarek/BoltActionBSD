@@ -227,7 +227,6 @@
     <entryLink id="f390-7372-3c83-e9e7" name="AK Militia Squad" hidden="false" collective="false" targetId="3c0d-9f83-0fcb-b831" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7f77-4ab7-0681-9093" name="New CategoryLink" hidden="false" targetId="1c1d-7c1b-86cd-2322" primary="true"/>
-        <categoryLink id="3948-9f4f-d94e-bc9c" name="AK Infantry Reinforcements" hidden="false" targetId="1f2a-5c09-ec8d-520f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fc9f-7510-3066-55bc" name="Kedyw Squad" hidden="false" collective="false" targetId="d1cf-e43f-08eb-43fe" type="selectionEntry">
@@ -1646,7 +1645,7 @@
                 <infoLink id="b21f-ab70-9408-c026" name="Rifle" hidden="false" targetId="f92f-9d0b-230f-4b16" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="99e5-a3de-2ba1-9eef" name="Weapon" hidden="false" collective="false">
+                <selectionEntryGroup id="99e5-a3de-2ba1-9eef" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="1156-e7f1-328c-6dcf">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6757-4607-8591-e91c" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca83-ec68-dc1e-09b7" type="min"/>
@@ -1731,7 +1730,7 @@
                 <infoLink id="33c5-e3f0-d3c2-c881" name="Rifle" hidden="false" targetId="f92f-9d0b-230f-4b16" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="6aad-2a0c-acf3-bf49" name="Weapon" hidden="false" collective="false">
+                <selectionEntryGroup id="6aad-2a0c-acf3-bf49" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="086d-ac67-dc0b-d537">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a9-383a-99e4-008b" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac79-bcb0-0401-c7b3" type="min"/>
